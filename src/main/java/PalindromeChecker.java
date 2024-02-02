@@ -53,4 +53,23 @@ public String reverse(String str)
     sNew = sNew + str.charAt(i);
     return sNew;
 }
+  public String onlyLetters(String sString){
+  String word = "";
+  for(int i =0; i < sString.length();i++){
+    if(Character.isLetter(sString.charAt(i)))
+    word = word + sString.charAt(i);
+  }
+  return word;
+}
+public String noSpaces(String sWord){
+  String word = "";
+  for(int i = 0;i<sWord.length();i++){
+  if(sWord.charAt(i) != ' ' )
+  word = word + sWord.charAt(i);
+  }
+  return word;
+}
+ public String noCapitals(String sWord){
+  return (sWord.toLowerCase());
+}
 }
